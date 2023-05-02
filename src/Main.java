@@ -177,7 +177,7 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        List<Ventas> ventasList = Main.readVentasFromFile("C:\\Users\\Asus\\IdeaProjects\\Practica2\\src\\sales_data.csv");      //Esta linea busca el archivo .csv
+        List<Ventas> ventasList = Main.readVentasFromFile("sales_data.csv");      //Esta linea busca el archivo .csv
 
         Main.ventasNYC(ventasList);
         System.out.println("El total de ventas de New York es de: " + Main.ventasNewYork(ventasList, "NYC"));
