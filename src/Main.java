@@ -130,12 +130,12 @@ public class Main {
 
 
     public static List<Ventas> readVentasFromFile(String fileName) throws IOException {
-        List<Ventas> ventasList = new ArrayList<>();        //Creando una colección de reducción mutable
+        List<Ventas> ventasList = new ArrayList<>();       
 
         Pattern pattern = Pattern.compile("^(\\d+),\"(\\d+)\",\"(\\d+\\.\\d+)\",(\\d+),(\\d+\\.\\d+),\"([\\d/]+)\",\"(\\w+)\",(\\d+),(\\d+),(\\d+),\"(.+)\",(\\d+),\"(\\w+)\",\"(.+)\",\"(.+)\",\"(.+)\",\"(.+)\",\"(.+)\",(\\w+),(\\w+),(\\d+),\"(.+)\",\"(.+)\",\"(.+)\",(\\d+\\.\\d+)\",(\\w+)\"(.+)\",\"(.+)\",\"(\\w+)\"$");
 
 
-        //Las proximas lineas abren el archivo .csv y guarda los datos usando los setters de cada atributo
+        //se abre el archivo csv y se guardan los datos
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             ventasList = br.lines()
                     .skip(1) // skip header
@@ -177,7 +177,7 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        List<Ventas> ventasList = Main.readVentasFromFile("C:\\Users\\Asus\\IdeaProjects\\Practica2\\src\\sales_data.csv");      //Esta linea busca el archivo .csv
+        List<Ventas> ventasList = Main.readVentasFromFile("C:\\Users\\Asus\\IdeaProjects\\Practica2\\src\\sales_data.csv");   //se busca el archivo csv en la direccion guardada
 
         Main.ventasNYC(ventasList);
         System.out.println("El total de ventas de New York es de: " + Main.ventasNewYork(ventasList, "NYC"));
