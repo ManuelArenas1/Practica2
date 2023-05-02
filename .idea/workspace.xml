@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d62ded7d-2fc7-4f86-9a3b-93d05e191e5d" name="Changes" comment="Practica 2&#10;Manuel Arenas&#10;Marcelo Castro.&#10;&#10;En este proyecto se leen los datos desde un archivo csv, y se crea una lista utilizando el stream, lambda en bloque y el .map" />
+    <list default="true" id="d62ded7d-2fc7-4f86-9a3b-93d05e191e5d" name="Changes" comment="Practica 2&#10;Manuel Arenas&#10;Marcelo Castro.&#10;&#10;En este proyecto se leen los datos desde un archivo csv, y se crea una lista utilizando el stream, lambda en bloque y el .map">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -32,20 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "module",
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;,
+      &quot;directory&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682993477532</updated>
-      <workItem from="1682993478813" duration="2866000" />
+      <workItem from="1682993478813" duration="3873000" />
     </task>
     <task id="LOCAL-00001" summary="Practica 2&#10;Manuel Arenas&#10;Marcelo Castro.&#10;&#10;En este proyecto se leen los datos desde un archivo csv, y se crea una lista utilizando el stream, lambda en bloque y el .map">
       <created>1682996152487</created>
@@ -63,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682996152487</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Practica 2&#10;Manuel Arenas&#10;Marcelo Castro.&#10;&#10;En este proyecto se leen los datos desde un archivo csv, y se crea una lista utilizando el stream, lambda en bloque y el .map">
+      <created>1682996388106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682996388106</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,16 +99,5 @@
     <MESSAGE value="nvghghfgh" />
     <MESSAGE value="Practica 2&#10;Manuel Arenas&#10;Marcelo Castro.&#10;&#10;En este proyecto se leen los datos desde un archivo csv, y se crea una lista utilizando el stream, lambda en bloque y el .map" />
     <option name="LAST_COMMIT_MESSAGE" value="Practica 2&#10;Manuel Arenas&#10;Marcelo Castro.&#10;&#10;En este proyecto se leen los datos desde un archivo csv, y se crea una lista utilizando el stream, lambda en bloque y el .map" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>155</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

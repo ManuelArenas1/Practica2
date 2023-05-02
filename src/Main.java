@@ -130,43 +130,43 @@ public class Main {
 
 
     public static List<Ventas> readVentasFromFile(String fileName) throws IOException {
-        List<Ventas> ventasList = new ArrayList<>();        //Creando una colección de reducción mutable
+        List<Ventas> ventasList = new ArrayList<>();
 
         Pattern pattern = Pattern.compile("^(\\d+),\"(\\d+)\",\"(\\d+\\.\\d+)\",(\\d+),(\\d+\\.\\d+),\"([\\d/]+)\",\"(\\w+)\",(\\d+),(\\d+),(\\d+),\"(.+)\",(\\d+),\"(\\w+)\",\"(.+)\",\"(.+)\",\"(.+)\",\"(.+)\",\"(.+)\",(\\w+),(\\w+),(\\d+),\"(.+)\",\"(.+)\",\"(.+)\",(\\d+\\.\\d+)\",(\\w+)\"(.+)\",\"(.+)\",\"(\\w+)\"$");
 
 
-        //Las proximas lineas abren el archivo .csv y guarda los datos usando los setters de cada atributo
+        //se abre el archivo csv y se guardan los datos
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             ventasList = br.lines()
-                    .skip(1) // skip header
+                    .skip(1)
                     .map(line -> {
                         Ventas ventas = new Ventas();
-                        String[] fields = pattern.matcher(line).replaceAll("$1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23,$24,$25").split(",");
-                        ventas.setOrderNumber(Integer.parseInt(fields[0]));
-                        ventas.setQuantityOrdered(Integer.parseInt(fields[1]));
-                        ventas.setPriceEach(Double.parseDouble(fields[2]));
-                        ventas.setOrderLineNumber(Integer.parseInt(fields[3]));
-                        ventas.setSales(Double.parseDouble(fields[4]));
-                        ventas.setOrderDate(fields[5]);
-                        ventas.setStatus(fields[6]);
-                        ventas.setQtrId(Integer.parseInt(fields[7]));
-                        ventas.setMonthId(Integer.parseInt(fields[8]));
-                        ventas.setYearId(Integer.parseInt(fields[9]));
-                        ventas.setProductLine(fields[10]);
-                        ventas.setMsrp(Integer.parseInt(fields[11]));
-                        ventas.setProductCode(fields[12]);
-                        ventas.setCustomerName(fields[13]);
-                        ventas.setPhone(fields[14]);
-                        ventas.setAddressLine1(fields[15]);
-                        ventas.setAddressLine2(fields[16]);
-                        ventas.setCity(fields[17]);
-                        ventas.setState(fields[18]);
-                        ventas.setPostalCode(fields[19]);
-                        ventas.setCountry(fields[20]);
-                        ventas.setTerritory(fields[21]);
-                        ventas.setContactLastName(fields[22]);
-                        ventas.setContactFirstName(fields[23]);
-                        ventas.setDealSize(fields[24]);
+                        String[] posiciones = pattern.matcher(line).replaceAll("$1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23,$24,$25").split(",");
+                        ventas.setOrderNumber(Integer.parseInt(posiciones[0]));
+                        ventas.setQuantityOrdered(Integer.parseInt(posiciones[1]));
+                        ventas.setPriceEach(Double.parseDouble(posiciones[2]));
+                        ventas.setOrderLineNumber(Integer.parseInt(posiciones[3]));
+                        ventas.setSales(Double.parseDouble(posiciones[4]));
+                        ventas.setOrderDate(posiciones[5]);
+                        ventas.setStatus(posiciones[6]);
+                        ventas.setQtrId(Integer.parseInt(posiciones[7]));
+                        ventas.setMonthId(Integer.parseInt(posiciones[8]));
+                        ventas.setYearId(Integer.parseInt(posiciones[9]));
+                        ventas.setProductLine(posiciones[10]);
+                        ventas.setMsrp(Integer.parseInt(posiciones[11]));
+                        ventas.setProductCode(posiciones[12]);
+                        ventas.setCustomerName(posiciones[13]);
+                        ventas.setPhone(posiciones[14]);
+                        ventas.setAddressLine1(posiciones[15]);
+                        ventas.setAddressLine2(posiciones[16]);
+                        ventas.setCity(posiciones[17]);
+                        ventas.setState(posiciones[18]);
+                        ventas.setPostalCode(posiciones[19]);
+                        ventas.setCountry(posiciones[20]);
+                        ventas.setTerritory(posiciones[21]);
+                        ventas.setContactLastName(posiciones[22]);
+                        ventas.setContactFirstName(posiciones[23]);
+                        ventas.setDealSize(posiciones[24]);
                         return ventas;
                     })
                     .toList();
