@@ -9,77 +9,77 @@ import java.util.regex.Pattern;
 public class Main {
     public static void ventasNYC(List<Ventas> ventasList){
     ventasList.stream()
-            .filter(v -> v.getCity().equals("NYC"))
-            .forEach(v -> {
-                System.out.print("orderNumber: " + v.getOrderNumber() + ", ");
-                System.out.print("quantityOrdered: " + v.getQuantityOrdered() + ", ");
-                System.out.print("priceEach: " + v.getPriceEach() + ", ");
-                System.out.print("orderLineNumber: " + v.getOrderLineNumber() + ", ");
-                System.out.print("sales: " + v.getSales() + ", ");
-                System.out.print("orderDate: " + v.getOrderDate() + ", ");
-                System.out.print("status: " + v.getStatus() + ", ");
-                System.out.print("qtr_id: " + v.getQtrId() + ", ");
-                System.out.print("month_id: " + v.getMonthId() + ", ");
-                System.out.print("year_id: " + v.getYearId() + ", ");
-                System.out.print("productLine: " + v.getProductLine() + ", ");
-                System.out.print("msrp: " + v.getMsrp() + ", ");
-                System.out.print("productCode: " + v.getProductCode() + ", ");
-                System.out.print("customerName: " + v.getCustomerName() + ", ");
-                System.out.print("phone: " + v.getPhone() + ", ");
-                System.out.print("adressLine1: " + v.getAddressLine1() + ", ");
-                System.out.print("adressLine2: " + v.getAddressLine2() + ", ");
-                System.out.print("city: " + v.getCity() + ", ");
-                System.out.print("state: " + v.getState() + ", ");
-                System.out.print("postalCode: " + v.getPostalCode() + ", ");
-                System.out.print("country: " + v.getCountry() + ", ");
-                System.out.print("territory: " + v.getTerritory() + ", ");
-                System.out.print("contactLastName: " + v.getContactLastName() + ", ");
-                System.out.print("contactFirstName: " + v.getContactFirstName() + ", ");
-                System.out.println("dealSize: " + v.getDealSize());
+            .filter(l -> l.getCity().equals("NYC"))
+            .forEach(l -> {
+                System.out.print("orderNumber: " + l.getOrderNumber() + ", ");
+                System.out.print("quantityOrdered: " + l.getQuantityOrdered() + ", ");
+                System.out.print("priceEach: " + l.getPriceEach() + ", ");
+                System.out.print("orderLineNumber: " + l.getOrderLineNumber() + ", ");
+                System.out.print("sales: " + l.getSales() + ", ");
+                System.out.print("orderDate: " + l.getOrderDate() + ", ");
+                System.out.print("status: " + l.getStatus() + ", ");
+                System.out.print("qtr_id: " + l.getQtrId() + ", ");
+                System.out.print("month_id: " + l.getMonthId() + ", ");
+                System.out.print("year_id: " + l.getYearId() + ", ");
+                System.out.print("productLine: " + l.getProductLine() + ", ");
+                System.out.print("msrp: " + l.getMsrp() + ", ");
+                System.out.print("productCode: " + l.getProductCode() + ", ");
+                System.out.print("customerName: " + l.getCustomerName() + ", ");
+                System.out.print("phone: " + l.getPhone() + ", ");
+                System.out.print("adressLine1: " + l.getAddressLine1() + ", ");
+                System.out.print("adressLine2: " + l.getAddressLine2() + ", ");
+                System.out.print("city: " + l.getCity() + ", ");
+                System.out.print("state: " + l.getState() + ", ");
+                System.out.print("postalCode: " + l.getPostalCode() + ", ");
+                System.out.print("country: " + l.getCountry() + ", ");
+                System.out.print("territory: " + l.getTerritory() + ", ");
+                System.out.print("contactLastName: " + l.getContactLastName() + ", ");
+                System.out.print("contactFirstName: " + l.getContactFirstName() + ", ");
+                System.out.println("dealSize: " + l.getDealSize());
             });
     }
 
     public static double ventasNewYork(List<Ventas> ventasList, String city){
         return ventasList.stream()
-                .filter(v -> {
-                    return v.getCity().equals(city);
+                .filter(l -> {
+                    return l.getCity().equals(city);
                 })
-                .mapToDouble(v -> v.getSales())
+                .mapToDouble(l -> l.getSales())
                 .sum();
     }
 
     public static int carrosClasicosNYC(List<Ventas> ventasList, String city) {
         return ventasList.stream()
-                .filter(v -> {
-                    return v.getCity().equals(city) && v.getProductLine().equals("Classic Cars");
+                .filter(l -> {
+                    return l.getCity().equals(city) && l.getProductLine().equals("Classic Cars");
                 })
-                .mapToInt(v -> v.getQuantityOrdered())
+                .mapToInt(l -> l.getQuantityOrdered())
                 .sum();
     }
     public static double ventasCarrosClasicosNYC(List<Ventas> ventasList, String city){
         return ventasList.stream()
-                .filter(v-> {
-                    return v.getCity().equals(city) && v.getProductLine().equals("Classic Cars");
+                .filter(l-> {
+                    return l.getCity().equals(city) && l.getProductLine().equals("Classic Cars");
                 })
-                .mapToDouble(v-> v.getSales())
+                .mapToDouble(l-> l.getSales())
                 .sum();
 
     }
     public static int motocicletasNYC(List<Ventas> ventasList, String city){
         return ventasList.stream()
-                .filter(v -> {
-                    return v.getCity().equals(city) && v.getProductLine().equals("Motorcycles");
+                .filter(l -> {
+                    return l.getCity().equals(city) && l.getProductLine().equals("Motorcycles");
                 })
-                .mapToInt(v -> v.getQuantityOrdered())
+                .mapToInt(l -> l.getQuantityOrdered())
                 .sum();
     }
 
     public static double ventasMotocicletasNYC(List<Ventas> ventasList, String city){
         return ventasList.stream()
-                .filter(v -> {
-                    return v.getCity().equals(city) && v.getProductLine().equals("Motorcycles");
+                .filter(l -> {
+                    return l.getCity().equals(city) && l.getProductLine().equals("Motorcycles");
                 })
-                .mapToDouble(v -> v.getSales())
+                .mapToDouble(l -> l.getSales())
                 .sum();
     }
 
@@ -88,10 +88,10 @@ public class Main {
     public static String clienteMasAutosComproEnNY(List<Ventas> ventasList) {
         Map<String, Integer> cantidadAutosPorCliente = new HashMap<>();
         ventasList.stream()
-                .filter(v -> v.getCity().equals("NYC") && (v.getProductLine().equals("Classic Cars") || v.getProductLine().equals("Vintage Cars")))
-                .forEach(v -> {
-                    String cliente = v.getCustomerName();
-                    Integer cantidadAutos = v.getQuantityOrdered();
+                .filter(l -> l.getCity().equals("NYC") && (l.getProductLine().equals("Classic Cars") || l.getProductLine().equals("Vintage Cars")))
+                .forEach(l -> {
+                    String cliente = l.getCustomerName();
+                    Integer cantidadAutos = l.getQuantityOrdered();
                     cantidadAutosPorCliente.put(cliente, cantidadAutosPorCliente.getOrDefault(cliente, 0) + cantidadAutos);
                 });
         return cantidadAutosPorCliente.entrySet().stream()
@@ -102,9 +102,9 @@ public class Main {
 
     public static String clienteMasCompro(List<Ventas> ventasList) {
         Map<String, Integer> cantidadPorCliente = new HashMap<>();
-        ventasList.forEach(v -> {
-            String cliente = v.getCustomerName();
-            Integer cantidad = v.getQuantityOrdered();
+        ventasList.forEach(l -> {
+            String cliente = l.getCustomerName();
+            Integer cantidad = l.getQuantityOrdered();
             cantidadPorCliente.put(cliente, cantidadPorCliente.getOrDefault(cliente, 0) + cantidad);
         });
         return cantidadPorCliente.entrySet().stream()
@@ -115,9 +115,9 @@ public class Main {
 
     public static String clienteMenosCompro(List<Ventas> ventasList) {
         Map<String, Integer> cantidadPorCliente = new HashMap<>();
-        ventasList.forEach(v -> {
-            String cliente = v.getCustomerName();
-            Integer cantidad = v.getQuantityOrdered();
+        ventasList.forEach(l -> {
+            String cliente = l.getCustomerName();
+            Integer cantidad = l.getQuantityOrdered();
             cantidadPorCliente.put(cliente, cantidadPorCliente.getOrDefault(cliente, 0) + cantidad);
         });
         return cantidadPorCliente.entrySet().stream()

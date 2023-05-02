@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d62ded7d-2fc7-4f86-9a3b-93d05e191e5d" name="Changes" comment="Practica 2&#10;Manuel Arenas&#10;Marcelo Castro.&#10;&#10;En este proyecto se leen los datos desde un archivo csv, y se crea una lista utilizando el stream, lambda en bloque y el .map">
+    <list default="true" id="d62ded7d-2fc7-4f86-9a3b-93d05e191e5d" name="Changes" comment="Update Main.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ventas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +21,19 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b74219bd-c298-48cc-b64b-8fd135b4c690" />
+        <option name="url" value="https://github.com/ManuelArenas1/Practica2.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/Main.java" root0="FORCE_HIGHLIGHTING" />
@@ -62,7 +76,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682993477532</updated>
-      <workItem from="1682993478813" duration="3873000" />
+      <workItem from="1682993478813" duration="5183000" />
+      <workItem from="1683026224996" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="Practica 2&#10;Manuel Arenas&#10;Marcelo Castro.&#10;&#10;En este proyecto se leen los datos desde un archivo csv, y se crea una lista utilizando el stream, lambda en bloque y el .map">
       <created>1682996152487</created>
@@ -78,7 +93,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682996388106</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update Main.java">
+      <created>1682997668053</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682997668053</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update Main.java">
+      <created>1682997776298</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682997776299</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nvghghfgh" />
     <MESSAGE value="Practica 2&#10;Manuel Arenas&#10;Marcelo Castro.&#10;&#10;En este proyecto se leen los datos desde un archivo csv, y se crea una lista utilizando el stream, lambda en bloque y el .map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Practica 2&#10;Manuel Arenas&#10;Marcelo Castro.&#10;&#10;En este proyecto se leen los datos desde un archivo csv, y se crea una lista utilizando el stream, lambda en bloque y el .map" />
+    <MESSAGE value="Update Main.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Main.java" />
   </component>
 </project>
